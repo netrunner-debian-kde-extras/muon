@@ -1,0 +1,35 @@
+Author: José Manuel Santamaría Lema <panfaust@gamil.com>
+Forwarded: no
+Description: Quick patch remove the tab for showing changelog because it doesn't
+ work yet.
+---
+ libmuon/DetailsWidget.cpp |    6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+--- a/libmuon/DetailsWidget.cpp
++++ b/libmuon/DetailsWidget.cpp
+@@ -51,13 +51,13 @@ DetailsWidget::DetailsWidget(QWidget *pa
+     m_dependsTab = new DependsTab(this);
+     m_filesTab = new InstalledFilesTab;
+     m_versionTab = new VersionTab();
+-    m_changelogTab = new ChangelogTab(this);
++    //m_changelogTab = new ChangelogTab(this);
+ 
+ 
+     addTab(m_mainTab, i18nc("@title:tab", "Details"));
+     addTab(m_technicalTab, i18nc("@title:tab", "Technical Details"));
+     addTab(m_dependsTab, i18nc("@title:tab", "Dependencies"));
+-    addTab(m_changelogTab, i18nc("@title:tab", "Changes List"));
++    //addTab(m_changelogTab, i18nc("@title:tab", "Changes List"));
+ 
+     // Hide until a package is clicked
+     hide();
+@@ -93,7 +93,7 @@ void DetailsWidget::setPackage(QApt::Pac
+     m_mainTab->setPackage(package);
+     m_technicalTab->setPackage(package);
+     m_dependsTab->setPackage(package);
+-    m_changelogTab->setPackage(package);
++    //m_changelogTab->setPackage(package);
+ 
+     if (package->availableVersions().size() > 1) {
+         addTab(m_versionTab, i18nc("@title:tab", "Versions"));

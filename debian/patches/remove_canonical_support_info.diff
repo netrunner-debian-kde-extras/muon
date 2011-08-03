@@ -1,0 +1,38 @@
+Author: José Manuel Santamaría Lema <panfaust@gmail.com>
+Forwarded: no
+Description: This patch hides useless information about Canonical support which
+ doesn't make sense in Debian. This is just a quick patch, perhaps this issue
+should be fixed in libqapt.
+---
+ libmuon/DetailsTabs/MainTab.cpp |   20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+--- a/libmuon/DetailsTabs/MainTab.cpp
++++ b/libmuon/DetailsTabs/MainTab.cpp
+@@ -194,16 +194,16 @@ void MainTab::refresh()
+     m_descriptionBrowser->setText(m_package->longDescription());
+ 
+     // Append a newline to give a bit of separation for the support string
+-    m_descriptionBrowser->append(QString());
+-    if (m_package->isSupported()) {
+-        m_descriptionBrowser->append(i18nc("@info Tells how long Canonical, Ltd. will support a package",
+-                                        "Canonical provides critical updates for %1 until %2.",
+-                                        m_package->latin1Name(), m_package->supportedUntil()));
+-    } else {
+-        m_descriptionBrowser->append(i18nc("@info Tells how long Canonical, Ltd. will support a package",
+-                                        "Canonical does not provide updates for %1. Some updates "
+-                                        "may be provided by the Ubuntu community.", m_package->latin1Name()));
+-    }
++//    m_descriptionBrowser->append(QString());
++//    if (m_package->isSupported()) {
++//        m_descriptionBrowser->append(i18nc("@info Tells how long Canonical, Ltd. will support a package",
++//                                        "Canonical provides critical updates for %1 until %2.",
++//                                        m_package->latin1Name(), m_package->supportedUntil()));
++//    } else {
++//        m_descriptionBrowser->append(i18nc("@info Tells how long Canonical, Ltd. will support a package",
++//                                        "Canonical does not provide updates for %1. Some updates "
++//                                        "may be provided by the Ubuntu community.", m_package->latin1Name()));
++//    }
+ }
+ 
+ void MainTab::emitSetInstall()

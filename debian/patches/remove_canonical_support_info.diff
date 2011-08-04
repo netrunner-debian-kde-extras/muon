@@ -4,8 +4,9 @@ Description: This patch hides useless information about Canonical support which
  doesn't make sense in Debian. This is just a quick patch, perhaps this issue
 should be fixed in libqapt.
 ---
- libmuon/DetailsTabs/MainTab.cpp |   20 ++++++++++----------
- 1 file changed, 10 insertions(+), 10 deletions(-)
+ installer/ApplicationDetailsView/ApplicationDetailsWidget.cpp |   28 +++++-----
+ libmuon/DetailsTabs/MainTab.cpp                               |   20 +++----
+ 2 files changed, 24 insertions(+), 24 deletions(-)
 
 --- a/libmuon/DetailsTabs/MainTab.cpp
 +++ b/libmuon/DetailsTabs/MainTab.cpp
@@ -36,3 +37,47 @@ should be fixed in libqapt.
  }
  
  void MainTab::emitSetInstall()
+--- a/installer/ApplicationDetailsView/ApplicationDetailsWidget.cpp
++++ b/installer/ApplicationDetailsView/ApplicationDetailsWidget.cpp
+@@ -236,11 +236,11 @@ ApplicationDetailsWidget::ApplicationDet
+     detailsGrid->addWidget(m_license, 2, 1, Qt::AlignLeft);
+ 
+     // detailsGrid, row 3
+-    QLabel *supportLabel = new QLabel(detailsWidget);
+-    supportLabel->setText("<b>" % i18nc("@label Label preceding the app support", "Support:") % "</b>");
+-    m_support = new QLabel(detailsWidget);
+-    detailsGrid->addWidget(supportLabel, 3, 0, Qt::AlignRight);
+-    detailsGrid->addWidget(m_support, 3, 1, Qt::AlignLeft);
++//    QLabel *supportLabel = new QLabel(detailsWidget);
++//    supportLabel->setText("<b>" % i18nc("@label Label preceding the app support", "Support:") % "</b>");
++//    m_support = new QLabel(detailsWidget);
++//    detailsGrid->addWidget(supportLabel, 3, 0, Qt::AlignRight);
++//    detailsGrid->addWidget(m_support, 3, 1, Qt::AlignLeft);
+ 
+     detailsGrid->setColumnStretch(1,1);
+ 
+@@ -353,15 +353,15 @@ void ApplicationDetailsWidget::setApplic
+         m_license->setText(i18nc("@info license", "Unknown"));
+     }
+ 
+-    if (app->package()->isSupported()) {
+-        m_support->setText(i18nc("@info Tells how long Canonical, Ltd. will support a package",
+-                                 "Canonical provides critical updates for %1 until %2",
+-                                 app->name(), app->package()->supportedUntil()));
+-    } else {
+-        m_support->setText(i18nc("@info Tells how long Canonical, Ltd. will support a package",
+-                                 "Canonical does not provide updates for %1. Some updates "
+-                                 "may be provided by the Ubuntu community", app->name()));
+-    }
++//    if (app->package()->isSupported()) {
++//        m_support->setText(i18nc("@info Tells how long Canonical, Ltd. will support a package",
++//                                 "Canonical provides critical updates for %1 until %2",
++//                                 app->name(), app->package()->supportedUntil()));
++//    } else {
++//        m_support->setText(i18nc("@info Tells how long Canonical, Ltd. will support a package",
++//                                 "Canonical does not provide updates for %1. Some updates "
++//                                 "may be provided by the Ubuntu community", app->name()));
++//    }
+ 
+     // Fetch reviews
+     reviewsBackend->fetchReviews(app);

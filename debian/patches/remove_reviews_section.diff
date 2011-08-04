@@ -1,0 +1,41 @@
+Author: José Manuel Santamaría Lema <panfaust@gmail.com>
+Forwarded: no
+Description: This patch disables the review system in muon-installer since it
+ depends on the Ubuntu infraestructure at the moment.
+---
+ installer/ApplicationDetailsView/ApplicationDetailsWidget.cpp |   10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+--- a/installer/ApplicationDetailsView/ApplicationDetailsWidget.cpp
++++ b/installer/ApplicationDetailsView/ApplicationDetailsWidget.cpp
+@@ -244,7 +244,7 @@ ApplicationDetailsWidget::ApplicationDet
+ 
+     detailsGrid->setColumnStretch(1,1);
+ 
+-    m_reviewsWidget = new ReviewsWidget(widget);
++    //m_reviewsWidget = new ReviewsWidget(widget);
+ 
+     QWidget *verticalSpacer = new QWidget(this);
+     verticalSpacer->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
+@@ -256,7 +256,7 @@ ApplicationDetailsWidget::ApplicationDet
+     layout->addWidget(body);
+     layout->addWidget(m_addonsWidget);
+     layout->addWidget(detailsWidget);
+-    layout->addWidget(m_reviewsWidget);
++    //layout->addWidget(m_reviewsWidget);
+     layout->addWidget(verticalSpacer);
+ 
+     connect(m_appBackend, SIGNAL(workerEvent(QApt::WorkerEvent, Transaction *)),
+@@ -364,9 +364,9 @@ void ApplicationDetailsWidget::setApplic
+ //    }
+ 
+     // Fetch reviews
+-    reviewsBackend->fetchReviews(app);
+-    connect(reviewsBackend, SIGNAL(reviewsReady(Application *, QList<Review *>)),
+-            this, SLOT(populateReviews(Application *, QList<Review *>)));
++    //reviewsBackend->fetchReviews(app);
++    //connect(reviewsBackend, SIGNAL(reviewsReady(Application *, QList<Review *>)),
++    //        this, SLOT(populateReviews(Application *, QList<Review *>)));
+ 
+     // Catch already-begun downloads. If the state is something else, we won't
+     // care because we won't handle it

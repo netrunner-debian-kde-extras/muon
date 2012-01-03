@@ -1,0 +1,14 @@
+--- a/libmuon/PackageModel/PackageWidget.cpp
++++ b/libmuon/PackageModel/PackageWidget.cpp
+@@ -376,10 +376,10 @@ bool PackageWidget::confirmEssentialRemo
+         return true;
+         break;
+     case KMessageBox::Cancel:
+-    default:
+         return false;
+         break;
+     }
++    return false;
+ }
+ 
+ void PackageWidget::saveState()

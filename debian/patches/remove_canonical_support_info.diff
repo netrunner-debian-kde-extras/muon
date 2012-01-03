@@ -80,4 +80,4 @@ should be fixed in libqapt.
 +//    }
  
      // Fetch reviews
-     reviewsBackend->fetchReviews(app);
+     connect(reviewsBackend, SIGNAL(reviewsReady(Application *, QList<Review *>)),

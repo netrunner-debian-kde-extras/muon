@@ -3,3 +3,4 @@ hide_changelog_tab.diff
 remove_reviews_section.diff
 list_properly_unofficial_sw_sources.diff
 ftbfs_error_return_type.diff
+fix_qjson_linkage.diff

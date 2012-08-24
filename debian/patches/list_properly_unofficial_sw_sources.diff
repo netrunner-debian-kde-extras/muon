@@ -8,7 +8,7 @@ Description: This patch makes muon-installer list properly unofficial packages'
 
 --- a/installer/ApplicationWindow.cpp
 +++ b/installer/ApplicationWindow.cpp
-@@ -255,7 +255,11 @@ void ApplicationWindow::populateViews()
+@@ -274,7 +274,11 @@ void ApplicationWindow::populateViews()
          QString originLabel = m_backend->originLabel(originName);
          QStandardItem *viewItem = new QStandardItem;
          viewItem->setEditable(false);
@@ -21,7 +21,7 @@ Description: This patch makes muon-installer list properly unofficial packages'
          viewItem->setData(originName, OriginFilterRole);
          viewItem->setData(AppView, ViewTypeRole);
  
-@@ -320,7 +324,11 @@ void ApplicationWindow::populateViews()
+@@ -342,7 +346,11 @@ void ApplicationWindow::populateViews()
          QString originLabel = m_backend->originLabel(originName);
          QStandardItem *viewItem = new QStandardItem;
          viewItem->setEditable(false);

@@ -2,3 +2,4 @@ remove_canonical_support_info.diff
 hide_changelog_tab.diff
 remove_reviews_section.diff
 list_properly_unofficial_sw_sources.diff
+disable_tests_building.diff

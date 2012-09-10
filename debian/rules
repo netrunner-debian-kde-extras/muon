@@ -4,3 +4,6 @@
 
 %:
 	dh $@ --parallel --dbg-package=muon-dbg --with kde
+
+override_dh_makeshlibs:
+	dh_makeshlibs -Xusr/lib/kde4/ -V

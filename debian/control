@@ -5,7 +5,7 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: José Manuel Santamaría Lema <panfaust@gmail.com>
 Build-Depends: debhelper (>= 9.0.0~), pkg-kde-tools (>= 0.5.0), cmake,
  pkg-config, kdelibs5-dev, libqapt-dev (>= 1.4.0), libdebconf-kde-dev,
- libqjson-dev, libqzeitgeist-dev, libqoauth-dev
+ libqjson-dev, libqoauth-dev
 Standards-Version: 3.9.2
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
 

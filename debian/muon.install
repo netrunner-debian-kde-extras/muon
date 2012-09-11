@@ -1,6 +1,12 @@
 usr/bin/muon
 usr/share/applications/kde4/muon.desktop
-usr/share/icons/hicolor/*
+usr/share/icons/hicolor/22x22/apps/muon.png
+usr/share/icons/hicolor/128x128/apps/muon.png
+usr/share/icons/hicolor/32x32/apps/muon.png
+usr/share/icons/hicolor/16x16/apps/muon.png
+usr/share/icons/hicolor/64x64/apps/muon.png
+usr/share/icons/hicolor/48x48/apps/muon.png
+usr/share/icons/hicolor/256x256/apps/muon.png
 usr/share/kde4/apps/muon/muonui.rc
 usr/share/kde4/config.kcfg/muon.kcfg
 usr/share/locale/*/LC_MESSAGES/muon.mo

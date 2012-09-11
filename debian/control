@@ -33,6 +33,18 @@ Description: package manager for KDE
   * Support for download the latest changelog of a package
   * Package screenshots
 
+Package: muon-discover
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime,
+ app-install-data, apt-xapian-index
+Recommends: app-install-data-partner, ubuntu-sso-client
+Description: Utility for browsing, installing, and removing applications
+ Muon Discover will help you browse through the huge applications library you
+ have available and help you find the applications you're looking for.
+ .
+ To install or remove software using the Center, you need administrator
+ access on the computer.
+
 Package: muon-installer
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime,

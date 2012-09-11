@@ -51,20 +51,20 @@ Description: Utility for browsing, installing, and removing applications
 Package: muon-updater
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime
-Recommends: muon-notifier
+#Recommends: muon-notifier
 Description: update manager for KDE
  Muon Updater is a graphical update manager for KDE. It is part of the Muon
  family of software and provides an interface similar to that of Muon.
 
-Package: muon-notifier
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, muon-updater, update-manager-kde,
- update-notifier-common
-Description: update notifier for KDE
- The Muon Notifier is an update notification daemon for KDE. It uses the KDE
- Daemon frame (KDED) framework to present the user with update notifications,
- providing an opportunity to launch the Muon Updater to deal with these
- updates.
+#Package: muon-notifier
+#Architecture: any
+#Depends: ${shlibs:Depends}, ${misc:Depends}, muon-updater, update-manager-kde,
+# update-notifier-common
+#Description: update notifier for KDE
+# The Muon Notifier is an update notification daemon for KDE. It uses the KDE
+# Daemon frame (KDED) framework to present the user with update notifications,
+# providing an opportunity to launch the Muon Updater to deal with these
+# updates.
 
 Package: libmuonprivate1
 Architecture: any
@@ -82,8 +82,8 @@ Section: debug
 Architecture: any
 Priority: extra
 Depends: ${misc:Depends}, libmuonprivate1 (= ${binary:Version}),
- muon (= ${binary:Version}) | muon-updater (= ${binary:Version}) |
- muon-notifier (= ${binary:Version})
+ muon (= ${binary:Version}) | muon-updater (= ${binary:Version})
+# | muon-notifier (= ${binary:Version})
 Recommends: kdelibs5-dbg
 Description: Muon debugging symbols
  This package contains debugging symbols for Muon.

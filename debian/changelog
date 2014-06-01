@@ -1,5 +1,5 @@
 muon (1.4.1-0r1) UNRELEASED; urgency=low
 
-  * Initial release (Closes: #605133)
+  * Initial release. Based on work by Jose Manuel Santamaria Lena (Closes: #605133)
 
- -- José Manuel Santamaría Lema <panfaust@gmail.com>  Mon, 25 Jul 2011 18:55:11 +0200
+ -- Sune Vuorela <sune@debian.org> Sun, 01 Jul 2014 18:55:11 +0200

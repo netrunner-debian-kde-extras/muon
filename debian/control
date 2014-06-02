@@ -2,9 +2,9 @@ Source: muon
 Section: kde
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
-Uploaders: Sune Vuorela <sune@debian.org>
+Uploaders: Sune Vuorela <sune@debian.org>, Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>
 Build-Depends: debhelper (>= 9.0.0~), pkg-kde-tools (>= 0.5.0), cmake,
- pkg-config, kdelibs5-dev, libqapt-dev (>= 1.4.0), libdebconf-kde-dev,
+ pkg-config, kdelibs5-dev, libqapt-dev (>= 2.2.0), libdebconf-kde-dev,
  libqjson-dev, libqoauth-dev, libqzeitgeist-dev
 Standards-Version: 3.9.2
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
@@ -78,7 +78,7 @@ Description: update manager for KDE
 # providing an opportunity to launch the Muon Updater to deal with these
 # updates.
 
-Package: libmuonprivate1
+Package: libmuonprivate2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, kdesudo, software-properties-kde
 Breaks: muon (<< 1.4.0-0r2)
@@ -93,7 +93,7 @@ Package: muon-dbg
 Section: debug
 Architecture: any
 Priority: extra
-Depends: ${misc:Depends}, libmuonprivate1 (= ${binary:Version}),
+Depends: ${misc:Depends}, libmuonprivate2 (= ${binary:Version}),
  muon (= ${binary:Version}) | muon-updater (= ${binary:Version})
 # | muon-notifier (= ${binary:Version})
 Recommends: kdelibs5-dbg

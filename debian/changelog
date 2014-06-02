@@ -1,5 +1,9 @@
-muon (1.4.1-0r1) UNRELEASED; urgency=low
+muon (2.2.65-1) UNRELEASED; urgency=low
 
+  [ Sune Vuorela ]
   * Initial release. Based on work by Jose Manuel Santamaria Lena (Closes: #605133)
 
- -- Sune Vuorela <sune@debian.org> Sun, 01 Jul 2014 18:55:11 +0200
+  [ Floris-Andrei Stoica-Marcu ]
+  * Upstream Release 2.2.65 
+
+ -- Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>  Mon, 02 Jun 2014 05:51:49 +0300

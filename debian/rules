@@ -1,9 +1,12 @@
 #!/usr/bin/make -f
 
-#include /usr/share/pkg-kde-tools/makefiles/1/list-missing.mk
-
 %:
 	dh $@ --parallel --dbg-package=muon-dbg --with kde
-
+	
 override_dh_makeshlibs:
-	dh_makeshlibs -Xusr/lib/kde4/ -V
+	dh_makeshlibs -Xusr/lib/kde4/ -V 'libmuonprivate2 (=2.2.65)'
+
+override_dh_install:
+	dh_install --fail-missing
+
+.PHONY: override_dh_install

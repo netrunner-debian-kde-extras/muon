@@ -8,3 +8,7 @@ usr/share/icons/hicolor/32x32/apps/muondiscover.png
 usr/share/icons/hicolor/48x48/apps/muondiscover.png
 usr/share/icons/hicolor/scalable/apps/muon-discover.svgz
 usr/share/icons/hicolor/scalable/apps/muon-discover.svgz
+usr/share/kde4/apps/muon-discover/muon-discoverui.rc
+usr/share/kde4/apps/muon-discover/featured.json
+usr/share/kde4/apps/desktoptheme/muon-contenttheme/widgets/listitem.svgz
+usr/share/kde4/apps/desktoptheme/muon-contenttheme/metadata.desktop

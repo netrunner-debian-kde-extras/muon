@@ -16,3 +16,10 @@ usr/lib/kde4/muon-appsbackend.so
 usr/lib/kde4/imports/org/kde/muon/qmldir
 usr/lib/kde4/imports/org/kde/muon/libmuondeclarativeplugin.so
 usr/lib/kde4/imports/org/kde/muonapt/libmuonaptdeclarativeplugin.so
+etc/dbus-1/system.d/org.kde.muon.repo.conf
+usr/share/dbus-1/system-services/org.kde.muon.repo.service
+usr/share/polkit-1/actions/org.kde.muon.repo.policy
+usr/share/kde4/apps/libmuon/rnrtestratings.txt
+usr/share/kde4/apps/libmuon/popcontestratings.txt
+usr/lib/kde4/imports/org/kde/muonapt/qmldir
+usr/lib/kde4/libexec/muon_repo_helper

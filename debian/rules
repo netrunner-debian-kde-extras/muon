@@ -9,4 +9,7 @@ override_dh_makeshlibs:
 override_dh_install:
 	dh_install --fail-missing
 
+override_dh_auto_test:
+	./debian/testScript.sh && exit $?
+
 .PHONY: override_dh_install

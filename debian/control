@@ -104,9 +104,3 @@ Description: Muon debugging symbols
  experienced a Muon crash without this package
  installed, please install it, try to reproduce the problem and fill a bug
  report with a new backtrace attached.
- 
-Package: check-language-support
-Architecture: all
-Depends: ${misc:Depends}, ${python3:Depends}
-Description: The check-language-support script
- It finds missing locale packages.

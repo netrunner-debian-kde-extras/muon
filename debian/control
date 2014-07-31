@@ -4,15 +4,15 @@ Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>, Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>
 Build-Depends: debhelper (>= 9.0.0~), pkg-kde-tools (>= 0.5.0), cmake,
- pkg-config, kdelibs5-dev, libqapt-dev (>= 2.2.0), libdebconf-kde-dev,
- libqjson-dev, libqoauth-dev, libqzeitgeist-dev, python3
+ pkg-config, kdelibs5-dev, libqapt-dev (>= 2.2.0), libdebconf-kde-dev, 
+ libqjson-dev, libqoauth-dev, libqzeitgeist-dev, python3, accountsservice (>= 0.6.37-3)
 Standards-Version: 3.9.2
 X-Python3-Version: >= 3.2
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/
 
 Package: muon
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime,
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime,
  apt-xapian-index
 Recommends: muon-updater
 Description: package manager for KDE
@@ -36,7 +36,7 @@ Description: package manager for KDE
 
 Package: muon-discover
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime,
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime,
  app-install-data, apt-xapian-index
 Recommends: app-install-data-partner, ubuntu-sso-client
 Description: Utility for browsing, installing, and removing applications
@@ -48,7 +48,7 @@ Description: Utility for browsing, installing, and removing applications
 
 Package: muon-installer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime,
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime,
  app-install-data
 Recommends: app-install-data-partner, zeitgeist-core
 Description: Utility for browsing, installing, and removing applications
@@ -63,7 +63,7 @@ Description: Utility for browsing, installing, and removing applications
 
 Package: muon-updater
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt-runtime
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime
 #Recommends: muon-notifier
 Description: update manager for KDE
  Muon Updater is a graphical update manager for KDE. It is part of the Muon
@@ -104,3 +104,10 @@ Description: Muon debugging symbols
  experienced a Muon crash without this package
  installed, please install it, try to reproduce the problem and fill a bug
  report with a new backtrace attached.
+
+Package: check-language-support
+Architecture: all
+Section: utils
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Check-language-support script
+ Return a list of missing locale packages.

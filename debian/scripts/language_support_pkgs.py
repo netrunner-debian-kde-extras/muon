@@ -138,7 +138,7 @@ class LanguageSupport:
         languages = set()
 
         lang_string = subprocess.check_output(
-            ['/usr/share/kde4/apps/muon/scripts/langtools/language-options'],
+            ['/usr/share/language-tools/language-options'],
             universal_newlines=True)
 
         for lang in lang_string.split():

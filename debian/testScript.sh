@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ./obj-x86_64-linux-gnu
+cd ./obj*
 
 output=$(ctest -V -N)
 i=0

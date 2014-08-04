@@ -5,7 +5,7 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>, Floris-Andrei Stoica-Marcu <floris.sm@gmail.com>
 Build-Depends: debhelper (>= 9.0.0~), pkg-kde-tools (>= 0.5.0), cmake,
  pkg-config, kdelibs5-dev, libqapt-dev (>= 2.2.0), libdebconf-kde-dev, 
- libqjson-dev, libqoauth-dev, libqzeitgeist-dev, python3, accountsservice (>= 0.6.37-3)
+ libqjson-dev, libqoauth-dev, libqzeitgeist-dev, python3, accountsservice (>= 0.6.37-3), libattica-dev
 Standards-Version: 3.9.2
 X-Python3-Version: >= 3.2
 Homepage: https://projects.kde.org/projects/extragear/sysadmin/muon/

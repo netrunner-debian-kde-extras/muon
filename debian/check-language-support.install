@@ -1,4 +1,0 @@
-debian/scripts/check-language-support /usr/share/kde4/apps/muon/scripts/
-debian/scripts/language_support_pkgs.py /usr/share/kde4/apps/muon/scripts/
-debian/scripts/data/check-language-support.1 /usr/share/kde4/apps/muon/scripts/data/
-debian/scripts/data/pkg_depends /usr/share/kde4/apps/muon/scripts/data/

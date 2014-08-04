@@ -80,7 +80,7 @@ Description: update notifier for KDE
 
 Package: libmuonprivate2
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, kdesudo, software-properties-kde
+Depends: ${shlibs:Depends}, ${misc:Depends}, kdesudo, software-properties-kde, accountsservice (>= 0.6.37-3)
 Breaks: muon (<< 1.4.0-0r2)
 Replaces: muon (<< 1.4.0-0r2)
 Description: Runtime files for the Muon package management suite
@@ -104,10 +104,3 @@ Description: Muon debugging symbols
  experienced a Muon crash without this package
  installed, please install it, try to reproduce the problem and fill a bug
  report with a new backtrace attached.
-
-Package: check-language-support
-Architecture: all
-Section: utils
-Depends: ${misc:Depends}, ${python3:Depends}
-Description: Check-language-support script
- Return a list of missing locale packages.

@@ -38,7 +38,6 @@ Package: muon-discover
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime,
  app-install-data, apt-xapian-index
-Recommends: app-install-data-partner, ubuntu-sso-client
 Description: Utility for browsing, installing, and removing applications
  Muon Discover will help you browse through the huge applications library you
  have available and help you find the applications you're looking for.
@@ -50,7 +49,7 @@ Package: muon-installer
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime,
  app-install-data
-Recommends: app-install-data-partner, zeitgeist-core
+Recommends: zeitgeist-core
 Description: Utility for browsing, installing, and removing applications
  The Muon Software Center lets you browse and install thousands of
  applications available for Debian. You can view available
@@ -71,7 +70,7 @@ Description: update manager for KDE
 
 Package: muon-notifier
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, muon-updater, update-notifier-kde
+Depends: ${shlibs:Depends}, ${misc:Depends}, muon-updater
 Description: update notifier for KDE
  The Muon Notifier is an update notification daemon for KDE. It uses the KDE
  Daemon frame (KDED) framework to present the user with update notifications,

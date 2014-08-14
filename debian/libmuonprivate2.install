@@ -4,9 +4,9 @@ usr/lib/libmuonprivate.so
 usr/lib/libmuonapt.so
 usr/share/kde4/apps/muonabstractnotifier/muonabstractnotifier.notifyrc
 usr/share/kde4/apps/libmuon/moo.ogg
-usr/share/kde4/apps/libmuon/categories/apps-categories.xml
-usr/share/kde4/apps/libmuon/categories/knscomics-categories.xml
-usr/share/kde4/apps/libmuon/categories/knsplasmoids-categories.xml
+usr/share/kde4/apps/libmuon/categories/muon-applications-backend-categories.xml
+usr/share/kde4/apps/libmuon/categories/muon-knscomics-backend-categories.xml
+usr/share/kde4/apps/libmuon/categories/muon-knsplasmoids-backend-categories.xml
 usr/share/kde4/services/muon-knscomics-backend.desktop
 usr/share/kde4/services/muon-knsplasmoids-backend.desktop
 usr/share/kde4/services/muon-applications-backend.desktop

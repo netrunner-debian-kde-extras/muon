@@ -53,7 +53,7 @@ Depends: ${shlibs:Depends}, ${misc:Depends}, libqapt2-runtime,
 Recommends: app-install-data-partner, zeitgeist-core
 Description: Utility for browsing, installing, and removing applications
  The Muon Software Center lets you browse and install thousands of
- applications available for Ubuntu. You can view available
+ applications available for Debian. You can view available
  applications by category, or search quickly by name or description.
  You can also examine the applications already installed, and remove
  those you no longer need.
@@ -95,7 +95,7 @@ Architecture: any
 Priority: extra
 Depends: ${misc:Depends}, libmuonprivate2 (= ${binary:Version}),
  muon (= ${binary:Version}) | muon-updater (= ${binary:Version})
-# | muon-notifier (= ${binary:Version})
+ | muon-notifier (= ${binary:Version})
 Recommends: kdelibs5-dbg
 Description: Muon debugging symbols
  This package contains debugging symbols for Muon.

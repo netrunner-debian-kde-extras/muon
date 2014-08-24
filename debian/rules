@@ -10,6 +10,6 @@ override_dh_install:
 	dh_install --fail-missing
 
 override_dh_auto_test:
-	./debian/testScript.sh && exit $?
+	./debian/xsession.sh
 
 .PHONY: override_dh_install
